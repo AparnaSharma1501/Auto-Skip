@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Auto Skip",
+  "description": "Skips YouTube Ads For You.",
+  "version": "1.0",
+  "icons": {
+    "128": "./icons/auto-skip-icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["skipAds.js"]
+    }
+  ]
+}
